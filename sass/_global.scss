@@ -1,0 +1,124 @@
+// initial resets
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: $grayishBlue;
+    // width: 100vw;
+    overflow-x: hidden;
+   
+
+    &.noscoll{
+        overflow: hidden;
+    }
+    
+}
+// spacing
+.container{
+    max-width: 111rem;
+    margin: 0 auto;
+}
+
+.pd-x{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.pd-y{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+// scroll
+
+
+
+
+// anchor
+a,a:visited,a:active{
+    text-decoration: none;
+    cursor: pointer;
+    // color: inherit;
+}
+// list
+ul{
+    list-style: none;
+}
+
+// headings
+h1{
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 400;
+    color: $darkBlue;
+
+    @include breakpoint-up(large){
+        font-size: 5rem;
+    }
+}
+
+h2{
+    font-size: 2.6rem;
+    line-height: 1.2;
+    font-weight: 400;
+    color: $darkBlue;
+    margin-bottom: 2.5rem;
+
+    @include breakpoint-up(large){
+        font-size: 3.6rem;
+        margin-bottom: 3.6rem;
+    }
+    
+}
+
+.lead__para{
+    
+    line-height: 1.5;
+    font-weight: 400;
+    @include breakpoint-up(large){
+        font-size: 2rem;
+    }
+
+}
+
+// buttons
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 4rem;
+    border: none;
+    font-family: inherit;
+    font-size: $font-small;
+    color: $white;
+    font-weight: 700;
+    background-image: linear-gradient(to right,$limeGreen,$brightCyan);
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover{
+        opacity: 0.75;
+    }
+    &--desktop{
+        @include breakpoint-down(medium){
+            display:none;
+        }
+    }
+
+    
+}
+
+.btn:active,.btn:focus{
+    outline: none;
+}
