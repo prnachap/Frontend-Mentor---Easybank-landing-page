@@ -6,9 +6,13 @@
   "dependencies": {
     "node-sass": "^5.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.2.1",
+    "postcss-cli": "^8.3.1"
+  },
   "scripts": {
-    "start": "node-sass -w sass/ -o dist/css/ --recursive"
+    "watch:sass": "node-sass -w sass/ -o dist/css/ --recursive",
+    "compile:sass": "node-sass sass/main.scss dist/css/style.comp.css"
   },
   "author": "",
   "license": "ISC"
