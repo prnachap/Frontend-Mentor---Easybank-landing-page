@@ -27,6 +27,8 @@
         
     }
     &__item{
+        text-decoration: none;
+        color: $grayishBlue;
         background: $white;
         border-radius: 0.3rem;
         overflow: hidden;

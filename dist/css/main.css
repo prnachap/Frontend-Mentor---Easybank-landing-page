@@ -347,6 +347,8 @@ h2 {
         grid-column-gap: 3rem;
         grid-row-gap: 0; } }
   .article__item {
+    text-decoration: none;
+    color: #9698a6;
     background: white;
     border-radius: 0.3rem;
     overflow: hidden;
